@@ -1,0 +1,15 @@
+.footer {
+	height: 100px;
+	background: #000;
+
+	&__copyright {
+		font-family: $OpenSans;
+		font-size: 12px;
+		line-height: 100px;
+		/* or 100% */
+
+		text-align: center;
+
+		color: rgba(255, 255, 255, 0.5);
+	}
+}

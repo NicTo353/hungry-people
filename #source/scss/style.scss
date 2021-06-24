@@ -1,0 +1,102 @@
+// FONTS
+@import "fonts";
+// Reset
+@import "reset";
+// Fix
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+// Colors
+$Yellow: #e8c300;
+// Mixins
+@mixin sectionTitle {
+	font-family: $Banny;
+	font-size: 36px;
+	line-height: 48px;
+	/* or 133% */
+
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 8px;
+}
+@mixin yellowLine {
+	&:after {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 5px;
+		border-radius: 2px;
+		background: $Yellow;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+	}
+}
+@mixin yellowSquareRight {
+	&::after {
+		content: "";
+		position: absolute;
+		background-image: url("../img/yellow\ square.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 50%;
+		right: 0;
+		height: 52.63%;
+		width: 52.63%;
+		transform: translate(50%, -50%);
+	}
+}
+@mixin yellowSquareLeft {
+	&::after {
+		content: "";
+		position: absolute;
+		background-image: url("../img/yellow\ square.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 50%;
+		left: 0;
+		height: 52.63%;
+		width: 52.63%;
+		transform: translate(-50%, -50%);
+	}
+}
+// Общие стили
+@media (max-width: 768px) {
+	body.lock {
+		overflow: hidden;
+	}
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+// Main-screen
+@import "main-screen";
+// Nav
+@import "nav";
+// Sections
+@import "section";
+// Footer
+@import "footer";
+// Team
+@import "team";
+// Rezevari
+@import "rezevari";
+// Form
+@import "form";
+// Specialties
+@import "specialties";
+// Menu
+@import "menu";
+// Private-events
+@import "private-events";
+// Photos
+@import "photos";
+// Contact
+@import "contact";

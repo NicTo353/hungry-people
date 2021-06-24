@@ -1,0 +1,13 @@
+// Open sans
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+$OpenSans: "Open Sans", sans-serif;
+// Banny
+@font-face {
+	font-family: "Banny";
+	src: url("../fonts/Banny-Round.eot");
+	src: url("../fonts/Banny-Round.woff") format("woff"), url("../fonts/Banny-Round.ttf") format("truetype"),
+		url("../fonts/Banny-Round.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+$Banny: "Banny", sans-serif;

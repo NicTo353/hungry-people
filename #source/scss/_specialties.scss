@@ -1,0 +1,33 @@
+.slider {
+	background-image: url("../img/specialty-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.slider .section__row {
+	padding-bottom: 20px;
+}
+.slick-dots {
+	bottom: 30px !important;
+}
+
+.custom-slick-dots {
+	background: rgba(255, 255, 255, 0.5);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: auto;
+}
+.slick-active .custom-slick-dots {
+	background: white;
+}
+@media (max-width: 768px) {
+	.slider {
+		& .section__picture-left::after,
+		& .section__picture-right::after {
+			display: none;
+		}
+	}
+	.slick-dots {
+		bottom: 10px !important;
+	}
+}

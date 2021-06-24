@@ -1,0 +1,131 @@
+.section {
+	position: relative;
+	padding: 100px 0 100px;
+	overflow: hidden;
+	&__heading {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		font-family: $OpenSans;
+		font-weight: bold;
+		font-size: 12px;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+	&__ending {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		font-family: $OpenSans;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	&__col {
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
+
+	&__title {
+		@include sectionTitle;
+		margin-bottom: 11px;
+
+		position: relative;
+		@include yellowLine;
+	}
+
+	&__text {
+		font-family: $OpenSans;
+		text-align: center;
+		max-width: 620px;
+		&-right {
+			padding-right: 20px;
+		}
+		&-left {
+			padding-left: 20px;
+		}
+	}
+
+	&__title-white,
+	&__text-white {
+		color: white;
+	}
+
+	&__large {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: bold;
+		margin-bottom: 22px;
+	}
+
+	&__small {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	&__picture-right {
+		position: relative;
+		max-width: 475px;
+		img {
+			width: 100%;
+			filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+			border-radius: 5px;
+		}
+		@include yellowSquareRight;
+	}
+	&__picture-left {
+		position: relative;
+		max-width: 475px;
+		img {
+			width: 100%;
+			filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+			border-radius: 5px;
+		}
+		@include yellowSquareLeft;
+	}
+}
+@media (max-width: 768px) {
+	.section {
+		padding-bottom: 0;
+		&__ending {
+			display: none;
+		}
+		&__row {
+			flex-direction: column;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&__col {
+			&:first-child {
+				margin: 0 0 20px;
+			}
+			margin: 0 0 20px;
+		}
+		&__text {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.section__row-rezevari {
+	padding-left: 0;
+}

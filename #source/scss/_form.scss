@@ -1,0 +1,44 @@
+.section__form {
+}
+.form {
+	font-family: $OpenSans;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 600px;
+	&__row {
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+	&__input {
+		flex: 1 1 277px;
+		font-size: 14px;
+		line-height: 19px;
+		text-indent: 20px;
+		color: rgba(51, 51, 51, 0.5);
+		height: 60px;
+		background: #e5e5e5;
+		border-radius: 5px;
+		margin: 0 10px 10px 0;
+	}
+
+	&__button {
+		flex: 1 1 100%;
+		background: #e8c300;
+		border-radius: 5px;
+		height: 60px;
+		font-size: 12px;
+		line-height: 60px;
+		margin-right: 10px;
+		color: #ffffff;
+	}
+	@media (max-width: 768px) {
+		&__input,
+		&__button {
+			margin: 0 5px 10px;
+		}
+	}
+}
